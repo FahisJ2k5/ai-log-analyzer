@@ -157,10 +157,10 @@ No network and no API key are needed. A fake provider stands in for the model.
 
 | Check | Status |
 |---|---|
-| 128 tests | Passed on Python 3.10 in the development sandbox. |
+| 128 tests | Passed on Python 3.10 (development sandbox) and 3.14.2 (GitHub Codespace). |
 | Deliberate-bug check | Ten bugs were introduced one at a time (redaction after truncation, a removed email mask, unquoted search text, SQL built from a filter value, stack traces not joined, grouping on the whole message, a wrong time boundary, the key shown in a repr, duplicate files stored, redaction skipped). The tests caught all ten. |
 | Real Anthropic API call | **Not run.** It needs a real key and model name. The request format is tested against a fake transport only. |
-| Python 3.11 and 3.12, ruff, mypy | **Not run yet.** CI runs them. |
+| Python 3.10, 3.11 and 3.12, ruff, mypy | Passed in GitHub Actions (CI run #1, commit 806d0a1). ruff and strict mypy also passed in the Codespace. |
 
 ## Limitations
 
