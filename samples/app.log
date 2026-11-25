@@ -1,0 +1,20 @@
+2026-01-05 09:00:01 INFO app.server: Server started on port 8080
+2026-01-05 09:00:02 INFO app.db: Connected to database at 10.0.0.5:5432
+2026-01-05 09:14:22 WARNING app.api: Slow response for GET /api/orders/1042 took 2300 ms
+2026-01-05 09:15:10 ERROR app.db: Connection to 10.0.0.5:5432 timed out after 30s
+2026-01-05 09:15:40 ERROR app.db: Connection to 10.0.0.7:5432 timed out after 30s
+2026-01-05 09:16:05 ERROR app.db: Connection to 10.0.0.5:5432 timed out after 12s
+2026-01-05 09:20:00 ERROR app.auth: Authentication failed for user alice@example.com from 203.0.113.9
+2026-01-05 09:20:30 ERROR app.auth: Authentication failed for user bob@example.com from 203.0.113.44
+2026-01-05 09:31:12 ERROR app.worker: Unhandled exception while processing job 7f3a9c1e-1b2d-4c5e-9f00-aabbccddeeff
+Traceback (most recent call last):
+  File "/srv/app/worker.py", line 88, in run
+    result = handler(job)
+  File "/srv/app/handlers.py", line 42, in handler
+    return job.payload["customer_id"]
+KeyError: 'customer_id'
+2026-01-05 09:45:03 CRITICAL app.worker: Out of memory: killed process 4211 (worker)
+2026-01-05 10:02:11 INFO app.server: Health check ok
+2026-01-05 10:12:00 WARNING app.disk: Disk usage at 91% on /var/log
+2026-01-05 10:30:45 ERROR app.storage: Failed to write /var/data/export-20260105.csv: No space left on device
+2026-01-05 11:00:00 INFO app.server: Health check ok

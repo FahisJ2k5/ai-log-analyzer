@@ -1,0 +1,6 @@
+Jan  5 09:00:01 web01 sshd[2211]: Accepted publickey for deploy from 192.0.2.10 port 51122
+Jan  5 09:05:44 web01 sshd[2290]: Failed password for invalid user admin from 192.0.2.99 port 40022 ssh2
+Jan  5 09:05:49 web01 sshd[2290]: Failed password for invalid user admin from 192.0.2.99 port 40026 ssh2
+Jan  5 09:30:12 web01 kernel: Out of memory: Killed process 4211 (java) total-vm:2048000kB
+Jan  5 09:45:00 web01 systemd[1]: Started Daily apt download activities.
+Jan  5 10:01:33 web01 nginx[812]: connect() failed (111: Connection refused) while connecting to upstream

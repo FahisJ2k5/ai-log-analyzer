@@ -1,0 +1,6 @@
+{"timestamp":"2026-01-05T09:00:00Z","level":"info","logger":"api","message":"request completed","status":200}
+{"timestamp":"2026-01-05T09:01:10Z","level":"error","logger":"api","message":"payment gateway call failed","error":"connection reset by peer"}
+{"timestamp":"2026-01-05T09:01:55Z","level":"error","logger":"api","message":"payment gateway call failed","error":"connection reset by peer"}
+{"timestamp":"2026-01-05T09:02:30Z","level":"warn","logger":"cache","message":"cache miss rate high","rate":0.91}
+{"timestamp":"2026-01-05T09:03:00Z","level":"error","logger":"api","message":"request validation failed","error":"field 'quantity' must be a positive integer"}
+{"ts":1767603900,"severity":"CRITICAL","service":"queue","msg":"worker crashed","stack":"Traceback (most recent call last):\n  File \"worker.py\", line 10, in run\nRuntimeError: boom"}
